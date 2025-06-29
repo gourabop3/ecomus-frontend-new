@@ -101,25 +101,13 @@ function Productdetailstwo() {
                         <div className="col-md-9 col-9">
                           <div className="product-slick ">
                             <div>
-                              <ReactImageMagnify
-                                {...{
-                                  smallImage: {
-                                    alt: 'Wristwatch by Versace',
-                                    isFluidWidth: true,
-                                    src: viewimg,
-                                    width: 140,
-                                    height: 162
-                                  },
-                                  largeImage: {
-                                    src: viewimg,
-                                    width: 836,
-                                    height: 1100
-                                  },
-                                  enlargedImagePosition: 'over',
-                                  lensStyle: { backgroundColor: 'rgba(0,0,0,.6)' }
-                                }}
-
-                              />
+                        <img
+  src={viewimg}
+  alt="Wristwatch by Versace"
+  width={140}
+  height={162}
+  style={{ objectFit: "cover", maxWidth: "100%" }}
+/>
                               {/* <img src="./images/product-sidebar/001.jpg" alt className="img-fluid  image_zoom_cls-0" /> */}
                             </div>
                             {/* <div><img src="./images/product-sidebar/002.jpg" alt className="img-fluid  image_zoom_cls-1" /></div>
