@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import OwlCarousel from "react-owl-carousel";
-import ReactImageMagnify from 'react-image-magnify';
+
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Footer from '../components/Footer';
