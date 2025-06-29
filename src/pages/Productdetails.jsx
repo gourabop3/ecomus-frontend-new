@@ -478,32 +478,15 @@ if(isLoading == false){
                         <div className="col-md-9 col-9">
                           <div className="product-slick ">
                             <div>
-                              <ReactImageMagnify
-                                {...{
-                                  smallImage: {
-                                    alt: "Wristwatch by Versace",
-                                    isFluidWidth: true,
-                                    src:
-                                      viewimg == null
-                                        ? `${process.env.REACT_APP_API_IMAGE_URL}${Data23?.[showoption]?.product_image1}`
-                                        : viewimg,
-                                    width: 140,
-                                    height: 600,
-                                  },
-                                  largeImage: {
-                                    src:
-                                      viewimg == null
-                                        ? `${process.env.REACT_APP_API_IMAGE_URL}${Data23?.[showoption]?.product_image1}`
-                                        : viewimg,
-                                    width: 836,
-                                    height: 1100,
-                                  },
-                                  enlargedImagePosition: "over",
-                                  lensStyle: {
-                                    backgroundColor: "rgba(0,0,0,.6)",
-                                  },
-                                }}
-                              />
+                          <img
+  alt="Wristwatch by Versace"
+  src={
+    viewimg == null
+      ? `${process.env.REACT_APP_API_IMAGE_URL}${Data23?.[showoption]?.product_image1}`
+      : viewimg
+  }
+  style={{ maxWidth: "100%", height: "auto" }}
+/>
                              </div>
                             </div>
                         </div>
